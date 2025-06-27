@@ -1,2 +1,2 @@
-# data-engine-lessons
+# daita-lessons
 This is repository for learning data engineering
