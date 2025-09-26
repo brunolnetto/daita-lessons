@@ -3,7 +3,7 @@ version: "3.8"
 services:
   # 🐘 PostgreSQL for MLflow
   postgres:
-    image: postgres:17
+    image: postgres:18
     environment:
       - POSTGRES_USER=mlflow_user
       - POSTGRES_PASSWORD=mlflow_password
