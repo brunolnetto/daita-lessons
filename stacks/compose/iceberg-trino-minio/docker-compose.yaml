@@ -1,7 +1,7 @@
 services:
   # 🐘 PostgreSQL for Hive Metastore
   metastore-db:
-    image: postgres:17
+    image: postgres:18
     container_name: metastore-db
     networks:
       - trino-network

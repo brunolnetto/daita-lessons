@@ -3,7 +3,7 @@ version: "3.8"
 services:
   # 🐘 PostgreSQL for Hive Metastore
   metastore-db:
-    image: postgres:17
+    image: postgres:18
     restart: always
     environment:
       POSTGRES_USER: hive
