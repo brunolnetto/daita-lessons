@@ -23,7 +23,7 @@ services:
 
   # 🗂️ Coordinator
   coordinator:
-    image: apache/druid:32.0.1
+    image: apache/druid:36.0.0
     volumes:
       - druid_shared:/opt/shared
       - coordinator_var:/opt/druid/var
@@ -43,7 +43,7 @@ services:
 
   # 📊 Broker
   broker:
-    image: apache/druid:32.0.1
+    image: apache/druid:36.0.0
     volumes:
       - broker_var:/opt/druid/var
     depends_on:
@@ -63,7 +63,7 @@ services:
 
   # 📦 Historical
   historical:
-    image: apache/druid:32.0.1
+    image: apache/druid:36.0.0
     volumes:
       - druid_shared:/opt/shared
       - historical_var:/opt/druid/var
@@ -84,7 +84,7 @@ services:
 
   # 🕒 MiddleManager
   middlemanager:
-    image: apache/druid:32.0.1
+    image: apache/druid:36.0.0
     container_name: middlemanager
     volumes:
       - druid_shared:/opt/shared
@@ -106,7 +106,7 @@ services:
 
   # 📈 Router
   router:
-    image: apache/druid:32.0.1
+    image: apache/druid:36.0.0
     volumes:
       - router_var:/opt/druid/var
     depends_on:
