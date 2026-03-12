@@ -51,7 +51,7 @@ services:
   # 🦓 Zookeeper
   zookeeper:
     container_name: zookeeper
-    image: zookeeper:3.9.3
+    image: zookeeper:3.9.5
     ports:
       - "2181:2181"
     environment:
